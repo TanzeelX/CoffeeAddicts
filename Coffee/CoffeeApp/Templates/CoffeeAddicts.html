@@ -1,0 +1,310 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <title>Coffee Addicts</title>
+    <style></style>
+  </head>
+  <body>
+    {% for i in LoopData %}
+      <!-- ==================== Navbar ==================== -->
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="theme-toggle-button">Coffee Addicts<img class="nav-img" src="\static\Images\pngtree-iced-coffee-refreshing-clip-art-png-image_14107082-removebg-preview.png" height="40" width="40" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ==================== Main ==================== -->
+      <div class="Main">
+        <p class="typing">
+          Welcome To <br />Coffee Addicts
+        </p>
+        <img class="Main-img" src="\static\Images\tavis-beck-mAAcR1LR0mo-unsplash-removebg-preview.png" />
+      </div>
+
+      <!-- ==================== About ==================== -->
+      <div class="about mt-5" id="About">
+        <div class="Headings mt-5 mb-5">About Us</div>
+
+        <div class="abouttext">{{ i.AboutContent }}</div>
+      </div>
+      <hr class="half" />
+
+      <!-- ==================== Specialities ==================== -->
+      <div class="Headings mt-5 mb-3" id="Specialities">Our Speciality</div>
+      <div class="Cards mt-4">
+        <div class="row">
+          <div class="card" style="width: 16rem; margin: 10px;">
+            <img src="\static\Images\nathan-dumlao-iKUnbw_f9k0-unsplash.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-title">OUR BEANS</p>
+              <p class="card-text">Our beans are carefully selected to ensure quality and flavor in each cup. We craft every brew to give you a taste thats rich, bold, and Unique.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem; margin: 10px;">
+            <img src="\static\Images\brooke-cagle-X4RJG4aNi8o-unsplash.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-title">OUR LOVE</p>
+              <p class="card-text">Our love for coffee drives us to perfect each blend, creating flavors that make every sip an experience to savor, any time of the day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 16rem; margin: 10px;">
+            <img src="\static\Images\rawkkim-hwYwbz7TAhU-unsplash.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-title">OUR SKILLS</p>
+              <p class="card-text">Our skilled baristas bring years of experience to each pour, creating coffee thats not only flavorful but crafted to perfection with every cup.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem; margin: 10px;">
+            <img src="\static\Images\sofiya-levchenko-c07dv6i8P4Q-unsplash.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-title">OUR BLEND</p>
+              <p class="card-text">Our love for coffee drives us to perfect each blend, creating flavors that make every sip an experience to savor, any time of the day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="MCards mt-4">
+        <div class="card" style="width: 16rem; margin: 10px;">
+          <img src="\static\Images\nathan-dumlao-iKUnbw_f9k0-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-title">OUR BEANS</p>
+            <p class="card-text">Our beans are carefully selected to ensure quality and flavor in each cup. We craft every brew to give you a taste thats rich, bold, and Unique.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 16rem; margin: 10px;">
+          <img src="\static\Images\brooke-cagle-X4RJG4aNi8o-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-title">OUR LOVE</p>
+            <p class="card-text">Our love for coffee drives us to perfect each blend, creating flavors that make every sip an experience to savor, any time of the day.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 16rem; margin: 10px;">
+          <img src="\static\Images\rawkkim-hwYwbz7TAhU-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-title">OUR SKILLS</p>
+            <p class="card-text">Our skilled baristas bring years of experience to each pour, creating coffee thats not only flavorful but crafted to perfection with every cup.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 16rem; margin: 10px;">
+          <img src="\static\Images\sofiya-levchenko-c07dv6i8P4Q-unsplash.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-title">OUR BLEND</p>
+            <p class="card-text">Our love for coffee drives us to perfect each blend, creating flavors that make every sip an experience to savor, any time of the day.</p>
+          </div>
+        </div>
+      </div>
+      <hr class="half" />
+
+      <!-- ==================== Products ==================== -->
+      <div class="Headings mt-5" id="Products">Our Products</div>
+      <div class="container">
+        <div class="products">
+          <div class="row">
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Espresso-Based Coffees</p>
+                <li class="CoffeeTypes">Espresso</li>
+                <li class="CoffeeTypes">Americano</li>
+                <li class="CoffeeTypes">Latte</li>
+                <li class="CoffeeTypes">Cappuccino</li>
+                <li class="CoffeeTypes">Macchiato</li>
+                <li class="CoffeeTypes">Mocha</li>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Brewed Coffees</p>
+                <li class="CoffeeTypes">Drip Coffee</li>
+                <li class="CoffeeTypes">French Press</li>
+                <li class="CoffeeTypes">Pour Over</li>
+                <li class="CoffeeTypes">Cold Brew</li>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Decafinated & Regional</p>
+                <li class="CoffeeTypes" class="CoffeeTypes">Swiss Water Decaf</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">French Roast Decaf</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Café Cubano</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Vietnamese Coffee</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Café au Lait</li>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Flavoured Coffees</p>
+                <li class="CoffeeTypes">Vanilla Latte</li>
+                <li class="CoffeeTypes">Hazelnut Coffee</li>
+                <li class="CoffeeTypes">Caramel Coffee</li>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Iced Coffees</p>
+                <li class="CoffeeTypes">Iced Coffee</li>
+                <li class="CoffeeTypes">Iced Latte</li>
+                <li class="CoffeeTypes">Iced Americano</li>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="coffees">
+                <p class="HeadCoffee">Specialty Coffees</p>
+                <li class="CoffeeTypes" class="CoffeeTypes">Affogato</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Turkish Coffee</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Vietnamese Coffee</li>
+                <li class="CoffeeTypes" class="CoffeeTypes">Dalgona Coffee</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Mproducts mt-3">
+        <div class="row">
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Espresso-Based Coffees</p>
+              <li class="CoffeeTypes">Espresso</li>
+              <li class="CoffeeTypes">Americano</li>
+              <li class="CoffeeTypes">Latte</li>
+              <li class="CoffeeTypes">Cappuccino</li>
+              <li class="CoffeeTypes">Macchiato</li>
+              <li class="CoffeeTypes">Mocha</li>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Decafinated & Regional</p>
+              <li class="CoffeeTypes" class="CoffeeTypes">Swiss Water Decaf</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">French Roast Decaf</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Colombian Decaf</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Café Cubano</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Vietnamese Coffee</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Café au Lait</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Iced Coffees</p>
+              <li class="CoffeeTypes">Iced Coffee</li>
+              <li class="CoffeeTypes">Iced Latte</li>
+              <li class="CoffeeTypes">Iced Americano</li>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Flavoured Coffees</p>
+              <li class="CoffeeTypes">Vanilla Latte</li>
+              <li class="CoffeeTypes">Hazelnut Coffee</li>
+              <li class="CoffeeTypes">Caramel Coffee</li>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Specialty Coffees</p>
+              <li class="CoffeeTypes" class="CoffeeTypes">Affogato</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Turkish Coffee</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Vietnamese Coffee</li>
+              <li class="CoffeeTypes" class="CoffeeTypes">Dalgona Coffee</li>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="coffees">
+              <p class="HeadCoffee">Brewed Coffees</p>
+              <li class="CoffeeTypes">Drip Coffee</li>
+              <li class="CoffeeTypes">French Press</li>
+              <li class="CoffeeTypes">Pour Over</li>
+              <li class="CoffeeTypes">Cold Brew</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="half" />
+
+      <!-- ==================== Contatc ==================== -->
+      <div class="Headings mt-5 mb-3" id="Contact">Contact Us</div>
+      <div class="container mb-5">
+        <form action="https://formspree.io/f/mbljlkbv" method="POST">
+          <div class="mb-3">
+            <label for="Name" class="form-label">Enter your Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your Name" required />
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your E-mail" required />
+          </div>
+          <div class="mb-3">
+            <label for="Message" class="form-label">Enter your Message</label>
+            <textarea type="text" class="form-control" id="Message" name="Message" placeholder="Enter your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- ==================== Footer ==================== -->
+      <footer class="UpperFooter">
+        <ul class="footernav">
+          <li class="nav-item">
+            <a href="#" class="FooterLink nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Specialities" class="FooterLink nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="FooterLink nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="FooterLink nav-link">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="FooterLink nav-link">About</a>
+          </li>
+        </ul>
+      </footer>
+      <footer class="LowerFooter">
+        <p class="FooterLink text-center">© 2024 Prince Production Company, Inc</p>
+      </footer>
+    {% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/styles.js' %}"></script>
+  </body>
+</html>

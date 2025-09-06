@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-color: #fff4e0;
+    --text-color: black;
+}
+
+.dark-mode {
+    --bg-color: #d2a679;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.h1 {
+    font-family: serif;
+}
+
+.link {
+    color: #4e342e;
+}
+
+.custom-navbar {
+    background-color: var(--bg-color);
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: var(--text-color);
+}
+
+.navbar-brand:hover
+{
+    cursor: pointer;
+}
+
+.nav-img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-family: 'Lobster', cursive;
+}
+
+
+#theme-toggle-button {
+    text-decoration: none;
+}
+
+.hr {
+    width: 50%;
+}
+
+.half
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.form-control {
+    border: transparent;
+    border-radius: 18px;
+}
+
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    outline-color: transparent;
+}
+
+
+.btn-primary {
+    border: transparent;
+    border-radius: 18px;
+    background-color: #8b5e3c;
+}
+
+.btn-primary:hover {
+    border: transparent;
+    border-radius: 18px;
+    background-color: #8b5e3c;
+}
+
+.Main {
+    display: block;
+}
+
+.typing {
+    font-family: serif;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.Main-img {
+    display: none;
+}
+
+
+.abouttext {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'poppins';
+    font-size: 20px;
+    text-align: justify;
+}
+
+.Cards {
+    margin-top: 60px;
+    margin-left: 126px;
+}
+
+.Cards .row {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    background-color: var(--bg-color);
+    border-color: lightgray;
+    border-radius: 14px;
+    padding: 0px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-img-top {
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.card-text {
+    color: var(--text-color);
+}
+
+.Headings {
+    font-family: serif;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.HeadCoffee {
+    font-family: 'poppins';
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.CoffeeTypes {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+.MCards {
+    display: none;
+}
+
+.Mproducts {
+    display: none;
+}
+
+
+.UpperFooter {
+    background-color: #8b5e3c;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footernav
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.LowerFooter {
+    background-color: #4e342e;
+    padding-top: 20px;
+}
+
+.FooterLink {
+    color: white;
+}
+
+.FooterLink:hover {
+    color: white;
+}
+
+
+@media (max-width:500px) {
+
+
+    .typing {
+        margin-top: 50px;
+        font-size: 60px;
+        padding-top: 10px;
+    }
+
+    .Main-img {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .abouttext {
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+    .Special {
+        display: block;
+        font-family: serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Cards {
+        display: none;
+    }
+
+    .MCards {
+        display: grid;
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+
+    .HeadCoffee {
+        font-family: 'poppins';
+        font-size: 18px;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .CoffeeTypes {
+        color: var(--text-color);
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    .products {
+        display: none;
+    }
+
+    .Mproducts {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .Mproducts .row {
+        justify-content: center;
+    }
+
+    .Headings {
+        font-family: serif;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+}
