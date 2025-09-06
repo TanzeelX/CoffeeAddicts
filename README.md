@@ -1,4 +1,4 @@
-![Homepage Screenshot](Screenshots/Screenshot 1.png)
+![Homepage Screenshot](https://github.com/TanzeelX/CoffeeAddicts/blob/dc1086de5ee35e9752c48a4073e826a6e5b9d820/Screenshots/Screenshot%201.png)
 ![About Screenshot](Screenshots/Screenshot 2.png)
 ![Specialty Screenshot](Screenshots/Screenshot 3.png)
 ![Products Screenshot](Screenshots/Screenshot 4.png)
